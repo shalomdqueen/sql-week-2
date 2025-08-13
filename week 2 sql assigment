@@ -1,0 +1,25 @@
+_ _ Question 1: Select all columns from the payments table
+SELECT checkNumber, paymentDate, amount
+FROM payments;
+
+__ Question 2: Select all columns from the orderdate,order table where the status is 'In Process'
+SELECT orderDate, requiredDate, status
+FROM orders
+WHERE status = 'In Process'
+ORDER BY orderDate DESC;
+
+__ Question 3: select first name, last name,email from employees where job title is 'Sales Rep' and order by employee number in descending order
+SELECT firstName, lastName, email
+FROM employees
+WHERE jobTitle = 'Sales Rep'
+ORDER BY employeeNumber DESC;
+
+_ _ Question 4: Select all columns from the offices table
+SELECT *
+FROM offices;
+
+_ _ Question 5: Select productName and quantityInStock from products table, order by buyPrice in ascending order and limit to 5 results
+SELECT productName, quantityInStock
+FROM products
+ORDER BY buyPrice ASC
+LIMIT 5;
